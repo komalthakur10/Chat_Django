@@ -3,7 +3,7 @@
 Using Ubuntu 20.04 OS for Redis Docker
 
 
-Features:
+Things Implemented :
 
   1. Authentication
   2. Default Django Admin Panel
