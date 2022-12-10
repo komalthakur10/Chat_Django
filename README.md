@@ -4,6 +4,7 @@ Using Ubuntu 20.04 OS for Redis Docker
 
 
 Features:
+
   1. Authentication
   2. Default Django Admin Panel
   3. User Profile
@@ -12,9 +13,13 @@ Features:
   
  
 • Languages: Python, JavaScript/jQuery, Html, CSS
+
 • Front end: Python
+
 • Back end: MySQL
+
 • Server: ASGI (Asynchronous Server Gateway Interface)
+
 • Frameworks and libraries: Django, channels, djangorestframework, django-redis, django-crispy-forms, Bootstrap4
   
   
