@@ -1,0 +1,22 @@
+{% extends "chatapp/Base.html" %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %} Signup {% endblock title %}
+
+{% block body %}
+
+    <div class="d-flex justify-content-center container card shadow-lg mt-2 p-1" >
+        <div class="card-header lead bg-lgrad">Sign Up</div>
+        <form method="POST" class="card-body">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn btn-block bg-grad " type="submit"> Create Account </button>
+        </form>
+        <div class="border-top">
+            <small class="text-mutted small"> Already Have An Account ? <a class="ml-2" href="{% url 'Login' %}">Sign In</a> </small>
+        </div>
+    </div>
+
+{% endblock body %}

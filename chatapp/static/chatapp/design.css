@@ -1,0 +1,121 @@
+/* Common */
+
+.profile
+{
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profile-lg
+{
+  vertical-align: middle;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.bor-grad
+{
+  border: 10px solid !important;
+  border-image-slice: 1 !important;
+  border-width: 2px !important;
+  border-image-source: linear-gradient(to top right, #86FDE8, #5433FF) !important;
+}
+
+.bg-grad
+{
+  color: white; 
+  background: rgb(134,253,232);
+  background: -moz-linear-gradient(90deg, rgba(134,253,232,1) 0%, 100%);
+  background: -webkit-linear-gradient(90deg, rgba(134,253,232,1) 0%, rgba(84,51,255,1) 100%);
+  background: linear-gradient(90deg, rgba(134,253,232,1) 0%, rgba(84,51,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86fde8",endColorstr="#5433ff",GradientType=1);
+}
+ 
+.bg-lgrad
+{
+  color: white;
+  background: rgb(134,253,232);
+  background: -moz-linear-gradient(270deg, rgba(134,253,232,0.8) 0%, rgba(84,51,255,0.8) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(134,253,232,0.8) 0%, rgba(84,51,255,0.8) 100%);
+  background: linear-gradient(270deg, rgba(134,253,232,0.8) 0%, rgba(84,51,255,0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86fde8",endColorstr="#5433ff",GradientType=1); 
+}
+
+
+.main
+{
+  position: fixed;
+  height: 88vh;
+  width: 100vw;
+}
+
+.sidelistdiv
+{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 68vh;
+}
+
+.chatdiv
+{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 68vh;
+}
+
+/* Messages */
+
+.msgWrap
+{
+  padding: 7px 7px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-self: flex-end;
+  color: black;
+  margin: 4px;
+}
+.innerCont
+{
+  display: inline-flex;
+}
+.innerCont .current
+{
+  flex-direction: row-reverse;
+}
+
+.currentMsg
+{
+  min-width: 50px;
+  max-width: 500px;
+  padding: 10px 12px;
+  margin: 4px 6px;
+  background-color: rgba(84, 51, 255,0.6);
+  border: 2px solid rgba(84, 51, 255, 0.6);
+  border-radius: 50px;
+}
+.otherMsg
+{
+  min-width: 50px;
+  max-width: 500px;
+  padding: 10px 12px;
+  margin: 4px 6px;
+  background-color: rgba(40, 179, 197, 0.5);
+  border: 2px solid rgba(40, 179, 197, 0.85);
+  border-radius: 50px;
+}
+.current
+{
+  align-self: flex-end;
+}
+.other
+{
+  align-self: flex-start;
+}
+span.current,
+span.other
+{
+  color: black;
+}

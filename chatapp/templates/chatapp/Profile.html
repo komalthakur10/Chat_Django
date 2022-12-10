@@ -1,0 +1,31 @@
+{% extends "chatapp/Base.html" %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %} Profile {% endblock title %}
+
+{% block body %}
+
+<div class="row border m-2 p-2 shadow">
+    <div class="col-5">
+
+        <div class="container m-2">
+            <img class="profile-lg card-img-top" src="{{ user.profile.image.url }}">
+            <div class="card m-2 p-2 bg-lgrad text-center lead">{{ user.username }}</div> 
+        </div>
+
+    </div>
+    <div class="col-7">
+
+        <form method="POST" enctype="multipart/form-data" class="card-body">
+            {% csrf_token %}
+            {{ u_form|crispy }}
+            {{ p_form|crispy }}
+            <button class="btn btn-block bg-grad p-2" type="submit"> Update </button>
+        </form>
+
+    </div>
+</div>
+
+{% endblock body %}
